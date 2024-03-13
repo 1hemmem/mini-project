@@ -6,7 +6,7 @@ function App() {
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
         <div class="container-fluid">
           <a class="navbar-brand" href="#HomePage">
-            <span className="fw-bold">Blida Website</span>
+            <span className="fw-bold">Blida travels</span>
           </a>
           <button
             class="navbar-toggler"
@@ -38,11 +38,11 @@ function App() {
       <div>
         <section class="container-fluid" id="HomePage">
           <div className="row">
-            <div className="col-5 py-5 m-5 col-text-center">
+            <div className="col-5 py-5 m-5 col-text-center text-md-center">
               <h1 className="display-2 fw-bold text-light col-text-center text-md-start">
                 Here is blida
               </h1>
-              <h2 className="display-3 text-center text-md-start text-white">
+              <h2 className="display-3 col-text-center text-md-start text-white">
                 The perfect place for your vocation
               </h2>
               <button className="btn btn-secondary btn-lg container-fluid">
@@ -77,7 +77,7 @@ function App() {
     </div>
   </div>
   <div class="text-center pb-2">
-    <p>&copy; 2024 Company Name. All Rights Reserved.</p>
+    <p>&copy; 2024 Blida travels. All Rights Reserved.</p>
   </div>
 </footer>
 
