@@ -36,7 +36,7 @@ function App() {
       </nav>
       <div></div>
       <div>
-        <section class="container-fluid" id="HomePage">
+        <section class="container-fluid " id="HomePage">
           <div className="row">
             <div className="col-5 py-5 m-5 col-text-center text-md-center">
               <h1 className="display-2 fw-bold text-light col-text-center text-md-start">
