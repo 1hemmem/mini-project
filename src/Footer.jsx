@@ -5,8 +5,9 @@ export const Footer = () => {
         <div class="col-md-4">
           <h3>Blida Website</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque ultricies risus quis mi.
+            This is Blida, the place where you will find it all. Peace and
+            beauty of God's creation, u can visit mountains and discover what
+            you have been missing by using electronic devices.
           </p>
         </div>
         <div class="col-md-4">
