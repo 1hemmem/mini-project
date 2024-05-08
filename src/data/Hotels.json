@@ -1,0 +1,28 @@
+{
+  "Hotels": [
+    {
+      "imageSrc": "./pictures/Ville Des Roses Hotel.jpg",
+      "title": "Ville Des Roses Hotel",
+      "description": "Majestic peaks, tranquil lakes. Popular for hiking, nature enthusiasts, rich biodiversity.",
+      "link": "https://www.tripadvisor.fr/Hotel_Review-g2600838-d7093539-Reviews-Hotel_Ville_des_Roses-Blida_Blida_Province.html"
+    },
+    {
+      "imageSrc": "./pictures/KT.jpg",
+      "title": "KT Hotel",
+      "description": "Tallest mountain on Earth, known for its challenging climbs and breathtaking views.",
+      "link": "https://www.kthotels.com/"
+    },
+    {
+      "imageSrc": "./pictures/KT.jpg",
+      "title": "BN Hotel",
+      "description": "Iconic natural wonder, famous for its layered bands of red rock revealing millions of years of geological history.",
+      "link": "https://fr.hotels.com/ho1449083104/bn-hotel-blida-algerie/"
+    },
+    {
+      "imageSrc": "./pictures/Aurassi Hotel.jpg",
+      "title": "Aurassi Hotel",
+      "description": "World's largest coral reef system, home to a diverse array of marine life and a popular destination for snorkeling and diving.",
+      "link": "https://elaurassi.dz/"
+    }
+  ]
+}

@@ -2,6 +2,9 @@ import React from "react";
 import Roses from "./pictures/Ville Des Roses Hotel.jpg";
 import KT from "./pictures/KT.jpg";
 import Aurassi from "./pictures/Aurassi Hotel.jpg";
+import Axios from "axios"
+import { useState, useEffect } from "react";
+
 export const Hotelscard = ({ imageSrc, title, description, link }) => {
   return (
     <div
@@ -31,7 +34,26 @@ export const Hotelscard = ({ imageSrc, title, description, link }) => {
 };
 
 export const Hotels = () => {
-  const HotelsData = [
+  const [hotels, setHotels] = useState(null);
+
+  useEffect(() => {
+    console.log("hello");
+    fetchData();
+    console.log(hotels)
+  }, []);
+
+  const fetchData = async () => {
+    try {
+      const response = await Axios.get("http://localhost:8000/Hotels");
+      setHotels(response.data);
+      console.log(hotels)
+
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+    const HotelsData = [
     {
       imageSrc: Roses,
       title: "Ville Des Roses Hotel",
@@ -64,20 +86,19 @@ export const Hotels = () => {
 
   return (
     <div id="Top Hotels">
-      <br />
-      {" "}
+      <br />{" "}
       <h1 className="display-4 fw-bold text-dark d-flex justify-content-center align-items-center">
         <br />
         Best Hotels
       </h1>
       <div className="d-flex justify-content-center align-items-center">
-        {HotelsData.map((place, index) => (
+        {hotels && hotels.map((hotel, index) => (
           <Hotelscard
             key={index}
-            imageSrc={place.imageSrc}
-            title={place.title}
-            description={place.description}
-            link={place.link}
+            imageSrc={hotel.imageSrc}
+            title={hotel.title}
+            description={hotel.description}
+            link={hotel.link}
           />
         ))}
       </div>

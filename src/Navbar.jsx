@@ -1,12 +1,12 @@
 export const Navbar = () =>{
   return(
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#HomePage">
+  <nav className="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+    <div className="container-fluid">
+      <a className="navbar-brand" href="#HomePage">
         <span className="fw-bold">Blida travels</span>
       </a>
       <button
-        class="navbar-toggler"
+        className="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNavAltMarkup"
@@ -14,17 +14,17 @@ export const Navbar = () =>{
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#Homepage">
+      <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div className="navbar-nav">
+          <a className="nav-link active" aria-current="page" href="#Homepage">
             Home
           </a>
-          <a class="nav-link" href="#Top places">
+          <a className="nav-link" href="#Top places">
             Top Places
           </a>
-          <a class="nav-link" href="#Top Hotels">
+          <a className="nav-link" href="#Top Hotels">
             Top Hotels
           </a>
         </div>
