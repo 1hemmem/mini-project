@@ -9,9 +9,11 @@ export const Homepage = () => {
           <h2 className="display-3 col-text-center text-md-start text-white">
             The perfect place for your vocation
           </h2>
-          <button className="btn btn-secondary btn-lg container-fluid">
-            Learn more
-          </button>
+          <a href="https://en.wikipedia.org/wiki/Blida" target="blank">
+            <button className="btn btn-secondary btn-lg container-fluid">
+              Learn more
+            </button>
+          </a>
         </div>
       </div>
     </section>

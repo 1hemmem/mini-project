@@ -14,18 +14,18 @@ export const Footer = () => {
           <h3>Navigation</h3>
           <ul class="list-unstyled">
             <li>
-              <a href="#" class="text-white">
+              <a href="#Homepage" class="text-white">
                 Home
               </a>
             </li>
             <li>
-              <a href="#" class="text-white">
-                Top
+              <a href="#Top places" class="text-white">
+                Top places
               </a>
             </li>
             <li>
-              <a href="#" class="text-white">
-                Pricing
+              <a href="#Top Hotels" class="text-white">
+              Top Hotels
               </a>
             </li>
           </ul>
@@ -52,7 +52,7 @@ export const Footer = () => {
         </div>
       </div>
       <div class="text-center pb-2">
-        <p>&copy; 2024 Blida travels. All Rights Reserved.</p>
+        <p>&copy; 2024 Bahaeddine & Khalil. All Rights Reserved.</p>
       </div>
     </footer>
   );

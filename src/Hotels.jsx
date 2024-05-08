@@ -1,6 +1,8 @@
 import React from "react";
-
-export const Hotelscard = ({ imageSrc, title, description }) => {
+import Roses from "./pictures/Ville Des Roses Hotel.jpg";
+import KT from "./pictures/KT.jpg";
+import Aurassi from "./pictures/Aurassi Hotel.jpg";
+export const Hotelscard = ({ imageSrc, title, description, link }) => {
   return (
     <div
       className="card"
@@ -20,8 +22,8 @@ export const Hotelscard = ({ imageSrc, title, description }) => {
       <div id="idd" className="card-body">
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{description}</p>
-        <a href="#" className="btn btn-primary">
-          Read more
+        <a href={link} className="btn btn-primary" target="blank">
+          Visit website
         </a>
       </div>
     </div>
@@ -31,39 +33,38 @@ export const Hotelscard = ({ imageSrc, title, description }) => {
 export const Hotels = () => {
   const HotelsData = [
     {
-      imageSrc: chrea,
+      imageSrc: Roses,
       title: "Ville Des Roses Hotel",
       description:
         "Majestic peaks, tranquil lakes. Popular for hiking, nature enthusiasts, rich biodiversity.",
+      link: "https://www.tripadvisor.fr/Hotel_Review-g2600838-d7093539-Reviews-Hotel_Ville_des_Roses-Blida_Blida_Province.html",
     },
     {
-      imageSrc: chiffa,
-      title: "Mount Everest",
+      imageSrc: KT,
+      title: "KT Hotel",
       description:
         "Tallest mountain on Earth, known for its challenging climbs and breathtaking views.",
+      link: "https://www.kthotels.com/",
     },
     {
-      imageSrc: place_tout,
-      title: "Place du 1er Novembre",
+      imageSrc: Roses,
+      title: "BN Hotel",
       description:
         "Iconic natural wonder, famous for its layered bands of red rock revealing millions of years of geological history.",
+      link: "https://fr.hotels.com/ho1449083104/bn-hotel-blida-algerie/",
     },
     {
-      imageSrc: daya,
-      title: "Santorini",
-      description:
-        "Picturesque Greek island known for its stunning sunsets, white-washed buildings, and crystal-clear waters.",
-    },
-    {
-      imageSrc: chrea,
-      title: "Great Barrier Reef",
+      imageSrc: Aurassi,
+      title: "Aurassi Hotel",
       description:
         "World's largest coral reef system, home to a diverse array of marine life and a popular destination for snorkeling and diving.",
+      link: "https://elaurassi.dz/",
     },
   ];
 
   return (
-    <div>
+    <div id="Top Hotels">
+      <br />
       {" "}
       <h1 className="display-4 fw-bold text-dark d-flex justify-content-center align-items-center">
         <br />
@@ -76,6 +77,7 @@ export const Hotels = () => {
             imageSrc={place.imageSrc}
             title={place.title}
             description={place.description}
+            link={place.link}
           />
         ))}
       </div>
