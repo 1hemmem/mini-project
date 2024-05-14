@@ -21,10 +21,10 @@ export const Navbar = () =>{
           <a className="nav-link active" aria-current="page" href="#Homepage">
             Home
           </a>
-          <a className="nav-link" href="#Top places">
+          <a className="nav-link" href="#places">
             Top Places
           </a>
-          <a className="nav-link" href="#Top Hotels">
+          <a className="nav-link" href="#Hotels">
             Top Hotels
           </a>
         </div>

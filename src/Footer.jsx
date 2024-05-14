@@ -19,12 +19,12 @@ export const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#Top places" className="text-white">
+              <a href="#Places" className="text-white">
                 Top places
               </a>
             </li>
             <li>
-              <a href="#Top Hotels" className="text-white">
+              <a href="#Hotels" className="text-white">
               Top Hotels
               </a>
             </li>
