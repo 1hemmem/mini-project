@@ -5,5 +5,5 @@ This is a minin project of web development, where we are trying to apply the thi
 ### How to luanche the project:
 
 (`npm install`)
-(`npx json-server --watch src/data/Hotels.json --port 8000`)
+(`mini-project$ npx json-server --watch src/data/Hotels.json --port 3001`)
 (`npm run dev`)
