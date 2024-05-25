@@ -1,8 +1,8 @@
 export const Form = ()=> {
     
-
+    
     return <div>
-        <form action="">
+        <form action="" >
             
         </form>
     </div>

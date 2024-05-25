@@ -6,6 +6,7 @@ import { Footer } from "./Footer";
 import { Homepage } from "./Homepage";
 import  Places  from "./Places";
 import Hotels from "./Hotels";
+import { Login } from "./Login";
 
 function App() {
   const [hotels, setHotels] = useState([]);
