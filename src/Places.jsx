@@ -8,9 +8,9 @@ function  Places({ places }) {
         Top Places
       </h1>
       <div className="row">
-        {places.map((place) => (
-          <div className="col-md-4 mb-4" >
-            <div className="card">
+        {places.map((place,index) => (
+          <div className="col-md-4 mb-4" key={index}>
+            <div className="card" id="card">
               <img
                 className="card-img-top"
                 src={place.imageSrc}

@@ -8,9 +8,9 @@ function Hotels({ hotels }) {
         Top Hotels
       </h1>
       <div className="row">
-        {hotels.map((hotel) => (
-          <div className="col-md-4 mb-4" key={hotel.id}>
-            <div className="card">
+        {hotels.map((hotel,index) => (
+          <div className="col-md-4 mb-4" key={index}>
+            <div className="card" id="card">
               <img
                 className="card-img-top"
                 src={hotel.imageSrc}

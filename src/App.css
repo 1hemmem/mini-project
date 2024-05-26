@@ -1,18 +1,18 @@
-#HomePage{
+#HomePage {
   background-image: url(./pictures/blida_img1.jpg);
   background-blend-mode: darken;
   background-color: black;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 900px;
   width: 100%;
 }
 
-.card {
-  width: 18rem;
+#card {
+  width: 25rem;
   transition: transform 0.3s ease;
 }
 
-.card:hover {
+#card:hover {
   transform: scale(1.05); /* Increase size by 5% */
 }
 
