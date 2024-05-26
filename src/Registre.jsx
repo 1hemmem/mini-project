@@ -9,7 +9,7 @@ export const Register = ({ toggleForm }) => {
   const handleRegister = (e) => {
     e.preventDefault();
     // Handle registration logic here
-    const accountData = { loginemail, username, password,isadmin };
+    const accountData = { loginemail, username, password, isadmin };
     e.preventDefault();
     fetch("http://localhost:3002/Accounts", {
       method: "POST",
@@ -19,7 +19,7 @@ export const Register = ({ toggleForm }) => {
       console.log(accountData);
     });
   };
-return (
+  return (
     <div className="container mt-5 pt-5">
       <div className="row justify-content-center">
         <div className="col-md-6">
@@ -71,10 +71,10 @@ return (
                     className="form-check-input "
                     id="Yes"
                     name="admin"
-                    onChange={()=>setisadmin(!isadmin)}
+                    onChange={() => setisadmin(!isadmin)}
                   />
                   <label className="form-check-label"> Yes</label>
-                  <br />    
+                  <br />
                 </div>
                 <button
                   type="submit"

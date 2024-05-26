@@ -10,6 +10,7 @@ import { Login } from "./Login";
 import { Form } from "./Form";
 import { Register } from "./Registre";
 function App() {
+  const [isvalid, setIsvalid] = useState(false);
   const [hotels, setHotels] = useState([]);
   const [places, setPlaces] = useState([]);
   const [visible, setVisible] = useState(false);
@@ -18,7 +19,6 @@ function App() {
     setVisible(!visible);
     setButton(!button);
   };
-  const [islogged, setIslogged] = useState(false);
   const [isRegistering, setIsRegistering] = useState(false);
 
   const toggleForm = () => {
@@ -40,12 +40,20 @@ function App() {
 
   return (
     <div>
-      {isRegistering ? (
-        <Register toggleForm={toggleForm} />
-      ) : (
-        <Login toggleForm={toggleForm} />
+      {!isvalid && (
+        <div>
+          {isRegistering ? (
+            <Register toggleForm={toggleForm} />
+          ) : (
+            <Login
+              toggleForm={toggleForm}
+              isvalid={isvalid}
+              setIsvalid={setIsvalid}
+            />
+          )}
+        </div>
       )}
-      {islogged && (
+      {isvalid && (
         <div>
           <Navbar />
           <Homepage />

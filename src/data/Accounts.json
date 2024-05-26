@@ -13,6 +13,13 @@
       "username": "bahaeddine",
       "password": "0000",
       "isadmin": true
+    },
+    {
+      "id": "80c4",
+      "loginemail": "charenbahaeddinehemmem@gmail.Com",
+      "username": "bahaeddine_hemmem",
+      "password": "0000",
+      "isadmin": false
     }
   ]
 }

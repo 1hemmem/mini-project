@@ -1,25 +1,30 @@
 import React, { useState, useEffect } from "react";
 
-export const Login = ({ toggleForm }) => {
-  const [email, setEmail] = useState("");
+export const Login = ({ toggleForm,isvalid,setIsvalid }) => {
+  const [loginusername, setLoginusername] = useState("");
   const [password, setPassword] = useState("");
   const [data, setData] = useState([]);
-
+  
   useEffect(() => {
     fetch("http://localhost:3002/Accounts")
-    .then((response) => response.json())
-    .then((dat) => setData(dat));
+      .then((response) => response.json())
+      .then((dat) => setData(dat));
   }, []);
   const handleSubmit = (e) => {
     e.preventDefault();
+
     // Handle login logic here
-    //console.log("Email:", email);
-    //console.log("Password:", password);
+    data.map((profile, index) => {
+      if (profile.username == loginusername && profile.password == password) {
+        setIsvalid(true);
+      }
+      console.log(isvalid);
+    });
+    // compare if the username and password match with some user
   };
   /**
    * PROBLEM: DATA IS FETCHED SO MANY TIMES
    */
-  console.log(data);
   return (
     <div className="container mt-5 pt-5">
       <div className="row justify-content-center">
@@ -31,14 +36,14 @@ export const Login = ({ toggleForm }) => {
             <div className="card-body">
               <form onSubmit={handleSubmit}>
                 <div className="form-group">
-                  <label htmlFor="email">Email address</label>
+                  <label htmlFor="email">Username</label>
                   <input
-                    type="email"
+                    type="text"
                     className="form-control"
-                    id="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Enter your email"
+                    id="username"
+                    value={loginusername}
+                    onChange={(e) => setLoginusername(e.target.value)}
+                    placeholder="Enter your username"
                     required
                   />
                 </div>
