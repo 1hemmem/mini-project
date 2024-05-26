@@ -1,0 +1,18 @@
+{
+  "Accounts": [
+    {
+      "id": "6d97",
+      "loginemail": "khalil@gmail.com",
+      "username": "khalil",
+      "password": "0000",
+      "isadmin": true
+    },
+    {
+      "id": "d740",
+      "loginemail": "bahaeddine@gmail.com",
+      "username": "bahaeddine",
+      "password": "0000",
+      "isadmin": true
+    }
+  ]
+}

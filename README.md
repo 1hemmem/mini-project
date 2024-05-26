@@ -7,4 +7,5 @@ This is a minin project of web development, where we are trying to apply the thi
 (`npm install`)
 (`npx json-server --watch src/data/Hotels.json --port 3001`)
 (`npx json-server --watch src/data/Forms.json --port 3000`)
+(`npx json-server --watch src/data/Accounts.json --port 3002`)
 (`npm run dev`)

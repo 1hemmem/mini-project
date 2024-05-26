@@ -8,8 +8,7 @@ import Places from "./Places";
 import Hotels from "./Hotels";
 import { Login } from "./Login";
 import { Form } from "./Form";
-import { Button } from "react-bootstrap";
-
+import { Register } from "./Registre";
 function App() {
   const [hotels, setHotels] = useState([]);
   const [places, setPlaces] = useState([]);
@@ -19,7 +18,12 @@ function App() {
     setVisible(!visible);
     setButton(!button);
   };
+  const [islogged, setIslogged] = useState(false);
+  const [isRegistering, setIsRegistering] = useState(false);
 
+  const toggleForm = () => {
+    setIsRegistering(!isRegistering);
+  };
   useEffect(() => {
     // Fetch hotels from localhost:3001/hotels
     fetch("http://localhost:3001/Hotels")
@@ -36,26 +40,35 @@ function App() {
 
   return (
     <div>
-      <Navbar />
-      <Homepage />
-      {/* Pass the fetched places data to the Places component */}
-      <Places places={places} />
-      {/* Pass the fetched hotels data to the Hotels component */}
-      <Hotels hotels={hotels} />
-      <div className="col d-flex justify-content-center">
-        <br />
-        {button && (
-          <div>
-            <h2>Fill the form</h2>
-            <button className="btn btn-primary" onClick={HandleOnClick}>
-              Learn more
-            </button>
+      {isRegistering ? (
+        <Register toggleForm={toggleForm} />
+      ) : (
+        <Login toggleForm={toggleForm} />
+      )}
+      {islogged && (
+        <div>
+          <Navbar />
+          <Homepage />
+          {/* Pass the fetched places data to the Places component */}
+          <Places places={places} />
+          {/* Pass the fetched hotels data to the Hotels component */}
+          <Hotels hotels={hotels} />
+          <div className="col d-flex justify-content-center">
+            <br />
+            {button && (
+              <div>
+                <h2>Fill the form</h2>
+                <button className="btn btn-primary" onClick={HandleOnClick}>
+                  Learn more
+                </button>
+              </div>
+            )}
+            {visible && <Form />}
           </div>
-        )}
-        {visible && <Form />}
-      </div>
-      <br />
-      <Footer />
+          <br />
+          <Footer />
+        </div>
+      )}
     </div>
   );
 }
