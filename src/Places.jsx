@@ -1,6 +1,7 @@
 import React from "react";
+import './Places.css';  // Import the CSS file
 
-function  Places({ places }) {
+function Places({ places }) {
   return (
     <div className="container" id="places">
       <h1 className="display-4 fw-bold text-dark d-flex justify-content-center align-items-center">
@@ -8,8 +9,8 @@ function  Places({ places }) {
         Top Places
       </h1>
       <div className="row">
-        {places.map((place,index) => (
-          <div className="col-md-4 mb-4" key={index}>
+        {places.map((place, index) => (
+          <div className="col-sm-12 col-md-6 col-lg-4 mb-4" key={index}>
             <div className="card" id="card">
               <img
                 className="card-img-top"

@@ -27,6 +27,9 @@ export const Navbar = () =>{
           <a className="nav-link" href="#Hotels">
             Top Hotels
           </a>
+          <a className="nav-link" href="#Admin">
+            Admin Dashboard
+          </a>
         </div>
       </div>
     </div>

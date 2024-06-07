@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+
 export const Form = () => {
   const [firstname, setfirstname] = useState("");
   const [lastname, setlastname] = useState("");
@@ -9,7 +10,6 @@ export const Form = () => {
   const [coming, setcoming] = useState("");
   const [leaving, setleaving] = useState("");
   const [details, setdetails] = useState("");
-  const [currentTime, setCurrentTime] = useState(new Date());
 
   const handleSubmit = (e) => {
     const PostData = {
@@ -32,15 +32,14 @@ export const Form = () => {
       console.log(PostData);
     });
   };
+
   return (
     <div className="container mt-5">
       <div className="row justify-content-center">
         <div className="col-md-8" style={{ width: "80%" }}>
-          {" "}
-          {/* Adjust the column width here */}
           <div className="card">
-            <div className="card-header text-center">
-              <h3>Subscribe to Our Newsletter</h3>
+            <div className="card-header text-center"> {/* Centering the text */}
+              <h3>Fill this form to learn more</h3>
             </div>
             <div className="card-body">
               <form onSubmit={handleSubmit}>

@@ -20,6 +20,20 @@
       "username": "bahaeddine_hemmem",
       "password": "0000",
       "isadmin": false
+    },
+    {
+      "id": "622d",
+      "loginemail": "enpo@gmail.com",
+      "username": "enpo",
+      "password": "0000",
+      "isadmin": false
+    },
+    {
+      "id": "316a",
+      "loginemail": "enpo@gmail.com",
+      "username": "enpo",
+      "password": "0000",
+      "isadmin": false
     }
   ]
 }

@@ -9,6 +9,7 @@ import Hotels from "./Hotels";
 import { Login } from "./Login";
 import { Form } from "./Form";
 import { Register } from "./Registre";
+import Reviews from "./Reviews";
 function App() {
   const [isvalid, setIsvalid] = useState(false);
   const [hotels, setHotels] = useState([]);
@@ -57,6 +58,7 @@ function App() {
         <div>
           <Navbar />
           <Homepage />
+          <Reviews />
           {/* Pass the fetched places data to the Places component */}
           <Places places={places} />
           {/* Pass the fetched hotels data to the Hotels component */}

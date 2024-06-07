@@ -1,0 +1,69 @@
+#places {
+    padding: 2rem 0;
+  }
+  
+  #places h1 {
+    margin-bottom: 2rem;
+  }
+  
+  #places .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  #places .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  #places .card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+  }
+  
+  #places .card-body {
+    padding: 1rem;
+  }
+  
+  #places .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  #places .card-text {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  #places .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  #places .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  @media (max-width: 767.98px) {
+    #places h1 {
+      font-size: 2rem;
+    }
+    
+    #places .card-title {
+      font-size: 1.1rem;
+    }
+  
+    #places .card-text {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 575.98px) {
+    #places .card {
+      margin-bottom: 1rem;
+    }
+  }
+  
